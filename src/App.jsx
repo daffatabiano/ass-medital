@@ -13,6 +13,19 @@ function App() {
           <FaSearch />
         </button>
       </div>
+
+      <div className="weather-box">
+        <div className="box">
+          <div className="info-weather">
+            <div className="weather">
+              <img src="images/cloud.png" alt="" />
+              <p className="temperature">
+                <span></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

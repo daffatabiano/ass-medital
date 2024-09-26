@@ -18,14 +18,20 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #0e1538;
+  background-image: url('/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
   position: relative;
   width: 420px;
   height: 585px;
-  background: #fff;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 20px;
 }
@@ -42,16 +48,8 @@ body {
   position: absolute;
   left: 15px;
   font-size: 22px;
-  color: #0e1538;
   z-index: 10;
-}
-
-.icon {
-  position: absolute;
-  right: 25px;
-  font-size: 22px;
-  color: #0e1538;
-  z-index: 10;
+  color: #fff;
 }
 
 .search-box input {
@@ -59,19 +57,19 @@ body {
   height: 100%;
   position: absolute;
   outline: none;
-  border: 2px solid #0e1538;
+  border: 2px solid #ffff;
   font-size: 18px;
   padding: 0 20px 0 50px;
   border-radius: 10px;
   background: transparent;
-  color: #0e1538;
+  color: #ffff;
   z-index: 10;
   font-weight: 500;
   text-transform: capitalize;
 }
 
 .search-box input::placeholder {
-  color: #0e1538;
+  color: #ffff;
   text-transform: capitalize;
 }
 
@@ -81,13 +79,13 @@ body {
   right: 0;
   width: 50px;
   height: 100%;
-  background: #0e1538;
+  background: #ffff;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  color: #fff;
+  color: #162938;
   border: none;
   outline: none;
   z-index: 10;
