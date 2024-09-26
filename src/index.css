@@ -28,7 +28,7 @@ body {
 .container {
   position: relative;
   width: 420px;
-  height: 585px;
+  height: inherit;
   background: transparent;
   backdrop-filter: blur(15px);
   border: 2px solid rgba(255, 255, 255, 0.1);
@@ -89,4 +89,80 @@ body {
   border: none;
   outline: none;
   z-index: 10;
+}
+
+.weather-box {
+  text-align: center;
+  margin: 45px 0;
+  color: #ffff;
+}
+
+.weather-box img {
+  width: 65%;
+}
+
+.weather-box .temperature {
+  font-size: 70px;
+  font-weight: 500;
+  position: relative;
+  color: #ffff;
+  line-height: 1.2;
+}
+
+.weather-box .temperature span {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffff;
+}
+
+.weather-box .description {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.weather-details .humadity,
+.weather-details .wind {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+  justify-content: center;
+}
+
+.weather-details i {
+  font-size: 50px;
+  color: #ffff;
+  margin-right: 10px;
+}
+
+.weather-details span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffff;
+  display: inline-block;
+}
+
+.weather-details p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffff;
+}
+
+.weather-details .humadity {
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+.weather-details .wind {
+  padding-right: 20px;
+  justify-content: flex-end;
 }
